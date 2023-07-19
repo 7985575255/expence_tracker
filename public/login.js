@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit',  async function(
     console.log(obj)
     try{
 
-    const response=await axios.post('http://localhost:3000/user/loginuser',obj);
+    const response=await axios.post('http://16.171.177.49:3000/user/loginuser',obj);
      console.log(response);
     localStorage.setItem("token" , response.data.token);
     if(response.status==201){

@@ -7,7 +7,7 @@
     const obj={name,email,password};
     console.log(obj)
     try{
-        const response=await axios.post('http://localhost:3000/user/registeruser', obj);
+        const response=await axios.post('http://16.171.177.49:3000/user/registeruser', obj);
         if(response.status==201){
             window.location.href="./login.html";
         }
